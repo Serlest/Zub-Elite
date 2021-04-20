@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEBD57DF2E8F75894B257D11 /* Pods_Zub_Elite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F49E06432227D01504EE3D3 /* Pods_Zub_Elite.framework */; };
 		F35358FA262F07EB009B2E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35358F9262F07EB009B2E9D /* AppDelegate.swift */; };
 		F35358FC262F07EB009B2E9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35358FB262F07EB009B2E9D /* SceneDelegate.swift */; };
 		F3535901262F07EB009B2E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35358FF262F07EB009B2E9D /* Main.storyboard */; };
@@ -15,9 +16,13 @@
 		F3535910262F0C1B009B2E9D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F353590F262F0C1B009B2E9D /* LoginViewController.swift */; };
 		F3535913262F18B3009B2E9D /* PasswortResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3535912262F18B3009B2E9D /* PasswortResetViewController.swift */; };
 		F3535916262F18CC009B2E9D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3535915262F18CC009B2E9D /* SignInViewController.swift */; };
+		F3AD67FC262F58CF00A9DDDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3AD67FB262F58CF00A9DDDB /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F49E06432227D01504EE3D3 /* Pods_Zub_Elite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zub_Elite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94793FED3B0CD4DC871104A4 /* Pods-Zub-Elite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zub-Elite.debug.xcconfig"; path = "Target Support Files/Pods-Zub-Elite/Pods-Zub-Elite.debug.xcconfig"; sourceTree = "<group>"; };
+		CF1F876FEBF6F7BA5042EE71 /* Pods-Zub-Elite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zub-Elite.release.xcconfig"; path = "Target Support Files/Pods-Zub-Elite/Pods-Zub-Elite.release.xcconfig"; sourceTree = "<group>"; };
 		F35358F6262F07EB009B2E9D /* Zub-Elite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zub-Elite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35358F9262F07EB009B2E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F35358FB262F07EB009B2E9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		F353590F262F0C1B009B2E9D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F3535912262F18B3009B2E9D /* PasswortResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswortResetViewController.swift; sourceTree = "<group>"; };
 		F3535915262F18CC009B2E9D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F3AD67FB262F58CF00A9DDDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBD57DF2E8F75894B257D11 /* Pods_Zub_Elite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030BD5360658E63195920DDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F49E06432227D01504EE3D3 /* Pods_Zub_Elite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72889915A184A08C2F8A22B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94793FED3B0CD4DC871104A4 /* Pods-Zub-Elite.debug.xcconfig */,
+				CF1F876FEBF6F7BA5042EE71 /* Pods-Zub-Elite.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F35358ED262F07EB009B2E9D = {
 			isa = PBXGroup;
 			children = (
 				F35358F8262F07EB009B2E9D /* Zub-Elite */,
 				F35358F7262F07EB009B2E9D /* Products */,
+				72889915A184A08C2F8A22B9 /* Pods */,
+				030BD5360658E63195920DDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +95,7 @@
 				F3535902262F07ED009B2E9D /* Assets.xcassets */,
 				F3535904262F07ED009B2E9D /* LaunchScreen.storyboard */,
 				F3535907262F07ED009B2E9D /* Info.plist */,
+				F3AD67FB262F58CF00A9DDDB /* GoogleService-Info.plist */,
 			);
 			path = "Zub-Elite";
 			sourceTree = "<group>";
@@ -80,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F353590A262F07ED009B2E9D /* Build configuration list for PBXNativeTarget "Zub-Elite" */;
 			buildPhases = (
+				EF53093B698DC0233A0D4F4B /* [CP] Check Pods Manifest.lock */,
 				F35358F2262F07EB009B2E9D /* Sources */,
 				F35358F3262F07EB009B2E9D /* Frameworks */,
 				F35358F4262F07EB009B2E9D /* Resources */,
+				0598B2482B65250F40A81DBF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,12 +160,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3535906262F07ED009B2E9D /* LaunchScreen.storyboard in Resources */,
+				F3AD67FC262F58CF00A9DDDB /* GoogleService-Info.plist in Resources */,
 				F3535903262F07ED009B2E9D /* Assets.xcassets in Resources */,
 				F3535901262F07EB009B2E9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0598B2482B65250F40A81DBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zub-Elite/Pods-Zub-Elite-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zub-Elite/Pods-Zub-Elite-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zub-Elite/Pods-Zub-Elite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF53093B698DC0233A0D4F4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zub-Elite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F35358F2262F07EB009B2E9D /* Sources */ = {
@@ -291,12 +363,14 @@
 		};
 		F353590B262F07ED009B2E9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94793FED3B0CD4DC871104A4 /* Pods-Zub-Elite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 438S639937;
 				INFOPLIST_FILE = "Zub-Elite/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,12 +384,14 @@
 		};
 		F353590C262F07ED009B2E9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1F876FEBF6F7BA5042EE71 /* Pods-Zub-Elite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 438S639937;
 				INFOPLIST_FILE = "Zub-Elite/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
