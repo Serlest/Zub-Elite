@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
@@ -40,10 +41,26 @@ class LoginViewController: UIViewController {
             showAlert(title: "Fehler", message: "Email-Adresse eingeben")
             return
         }
-        performSegue(withIdentifier: "logIn", sender: nil)
+        Auth.auth().signIn(withEmail: emailTextField, password: passwortTextField) { [weak self] authResult, error in
+            if  error != nil {
+                self?.showAlert(title: "Etwas falsch", message: "\(String(describing: error?.localizedDescription))")
+                return
+            } else {
+                self?.performSegue(withIdentifier: "logIn", sender: nil)
+            }
+            
+        }
+
     }
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        let firebaseAuth = Auth.auth()
+    do {
+      try firebaseAuth.signOut()
+    } catch let signOutError as NSError {
+      print ("Error signing out: %@", signOutError)
+    }
+      
         emailTextField.text = nil
         passwortTextField.text = nil
     }
