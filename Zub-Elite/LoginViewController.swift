@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     // MARK: - Public Properties - var
     
     // MARK: - Privat Properties - privat var
-
+    
     // MARK: - Initializers - init
     
     // MARK: - Life Cycles Methods - Override func
@@ -33,6 +33,7 @@ class LoginViewController: UIViewController {
     // MARK: - IB Actions - @IBAction func
     
     @IBAction func einlogenButtonPressed() {
+       
         guard let emailTextField = emailTextField.text, !emailTextField.isEmpty else {
             showAlert(title: "Fehler", message: "Email-Adresse eingeben")
             return
@@ -48,7 +49,7 @@ class LoginViewController: UIViewController {
             } else {
                 self?.performSegue(withIdentifier: "logIn", sender: nil)
             }
-            
+
         }
 
     }
