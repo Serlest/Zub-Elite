@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
             return
         }
         guard let passwortTextField = passwortTextField.text, !passwortTextField.isEmpty else {
-            showAlert(title: "Fehler", message: "Email-Adresse eingeben")
+            showAlert(title: "Fehler", message: "Passwort eingeben")
             return
         }
         Auth.auth().signIn(withEmail: emailTextField, password: passwortTextField) { [weak self] authResult, error in
@@ -54,13 +54,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
-        let firebaseAuth = Auth.auth()
-    do {
-      try firebaseAuth.signOut()
-    } catch let signOutError as NSError {
-      print ("Error signing out: %@", signOutError)
-    }
-      
+  
         emailTextField.text = nil
         passwortTextField.text = nil
     }
